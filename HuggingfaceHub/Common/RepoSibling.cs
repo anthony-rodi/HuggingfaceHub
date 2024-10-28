@@ -16,7 +16,7 @@ namespace HuggingfaceHub.Common
         [JsonProperty("rfilename")]
         public string Filename { get; set; }
         [JsonProperty("size")]
-        public int Size { get; set; }
+        public Int64 Size { get; set; }
         [JsonProperty("blob_id")]
         public string BlobId { get; set; }
         [JsonProperty("lfs")]
