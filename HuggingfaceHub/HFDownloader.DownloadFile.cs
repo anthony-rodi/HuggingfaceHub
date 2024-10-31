@@ -370,7 +370,7 @@ namespace HuggingfaceHub
                             {
                                 await fs.WriteAsync(buffer, 0, bytesRead);
                                 newResumeSize += bytesRead;
-                                progress?.Report((int)(newResumeSize * pieces / totalFileLengths));
+                                progress?.Report((int)(newResumeSize * 100 / totalFileLengths));
                                 // Some data has been downloaded from the server so we reset the number of retries.
                                 retryLeft = 5;
                             }
